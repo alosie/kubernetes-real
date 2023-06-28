@@ -1,13 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "terraformaws11"
+    bucket = "terraformaws111"
     key    = "aws-terraform-vpc.tfstate"
     region = "us-east-1"
-  }
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
   }
 }
 
