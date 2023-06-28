@@ -1,11 +1,11 @@
 variable "pubsub1" {
   type = string
-  default = "subnet-051c49a4d8434be66"
+  default = "subnet-0c751e6172b1a6135" // pubsub1-prod subnet ID
 }
 
 variable "pubsub2" {
   type = string
-  default = "subnet-02273f25c912d46ee"
+  default = "subnet-0a4770c0c9f58995b" // pubsub2-prod subnet ID
 }
 
 variable "eksIAMRole" {
@@ -37,6 +37,7 @@ variable "desired_size" {
   type = string
   default = 3
 }
+
 variable "min_size" {
   type = string
   default = 3
