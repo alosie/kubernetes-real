@@ -16,5 +16,5 @@ helm install argocd -n argocd argo/argo-cd \
 ```
 
 ```
-(kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d)
+kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
