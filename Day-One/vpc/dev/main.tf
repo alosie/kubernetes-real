@@ -1,14 +1,14 @@
 terraform {
   backend "s3" {
-    bucket = "terraformaws11"
+    bucket = "terraformaws111"
     key    = "aws-terraform-vpc-dev.tfstate"
     region = "us-east-1"
   }
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
+ 
   }
+
+provider "aws" {
+  profile = "default"
 }
 
 resource "aws_vpc" "main" {
