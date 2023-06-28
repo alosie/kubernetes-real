@@ -23,5 +23,7 @@ Password: The password will be shown once you install Sosivio
 
 If you need to retrieve the password again after you've cleared the terminal, you can use the following:
 ```
-kubectl get secrets/sosivio-admin-otp -n sosivio --template={{.data.password}} | base64 -D
+kubectl get secrets/sosivio-admin-otp -n sosivio --template={{.data.password}} | base64 -D        for MacOs
+kubectl get secrets/sosivio-admin-otp -n sosivio --template={{.data.password}} | base64 -d          for windows
+
 ```
